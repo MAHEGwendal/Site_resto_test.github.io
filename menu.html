@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/menu_style.css">
-    <script type="text/javascript" src="js/darkmode.js" defer></script>
+    <script src="js/darkmode.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
@@ -16,7 +16,7 @@
 <body>
     <div class="grid">
         <header>
-            <navbar>
+            <div class="navbar">
                 <div class="burger" id="burger">&#9776;</div> <!-- Icône burger -->
                 <ul class="nav-list" id="nav-list">
                     <!-- Éléments alignés à gauche -->
@@ -39,15 +39,23 @@
                     </li>
                     <li class="nav-items">
                         <button class="theme_switch" id="theme_switch">
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M600-640 480-760l120-120 120 120-120 120Zm200 120-80-80 80-80 80 80-80 80ZM483-80q-84 0-157.5-32t-128-86.5Q143-253 111-326.5T79-484q0-146 93-257.5T409-880q-18 99 11 193.5T520-521q71 71 165.5 100T879-410q-26 144-138 237T483-80Z"/></svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#000000">
+                                <path
+                                    d="M600-640 480-760l120-120 120 120-120 120Zm200 120-80-80 80-80 80 80-80 80ZM483-80q-84 0-157.5-32t-128-86.5Q143-253 111-326.5T79-484q0-146 93-257.5T409-880q-18 99 11 193.5T520-521q71 71 165.5 100T879-410q-26 144-138 237T483-80Z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#000000">
+                                <path
+                                    d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z" />
+                            </svg>
                         </button>
                     </li>
                 </ul>
-            </navbar>
+            </div>
         </header>
 
-        <menu1>
+        <div class="menu1">
             <h1>🥗Les Entrées</h1>
             <h2>Velouté de carottes au gingembre</h2>
             <p>Chantilly salée au cumin, éclats de noisettes torréfiées — <b>7 €</b></p>
@@ -79,10 +87,10 @@
             <h2>Planche de charcuterie</h2>
             <p>Jambon de pays, saucisson, terrine maison, pain de campagne — <b>15 €</b></p>
 
-        </menu1>
+        </div>
 
 
-        <menu2>
+        <div class="menu2">
             <h1>🍰Les Désserts</h1>
             <h2>Moelleux au chocolat noir 70%</h2>
             <p>Cœur coulant, glace vanille bourbon —<b>7 €</b></p>
@@ -116,15 +124,15 @@
             <p>Thé ou infusion bio — <b>3,50€</b></p>
             <p>Café Gourmand — <b> 5€</b></p>
             <p>Chocolat chaud maison — <b>3,50€</b></p>
-        </menu2>
+        </div>
 
-        <form>
+        <div class="form">
             <h1>🧾Nos Formules</h1>
             <p><b>Entrée + Plat :</b> à partir de 24€</p>
             <p><b>Plat + Déssert :</b> à partir de 23€</p>
             <p><b>Entrée + Plat + Déssert :</b> à partir de 30€ (midi uniquement)</p>
 
-        </form>
+        </div>
 
         <footer>
             <div class="foot-left">
@@ -142,9 +150,9 @@
                 </ul>
             </div>
         </footer>
-        </div>
+    </div>
     <!-- Appel scripts JS pour la NavBar responsive -->
-    <script src="js/script.js"></script>    
+    <script src="js/script.js"></script>
 </body>
 
 </html>

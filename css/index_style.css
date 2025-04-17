@@ -214,7 +214,7 @@ main p {
 
 /* Apercu menu (à gauche) */
 
-aside{
+.aside{
     border-end-end-radius: 50px;
     border-end-start-radius: 50px;
     border-start-end-radius: 50px;
@@ -222,7 +222,7 @@ aside{
 
 
 
-aside, aside h2, aside p, aside ul, aside li, aside h4, aside img {
+.aside, .aside h2, .aside p, .aside ul, .aside li, .aside h4, .aside img {
     grid-area: sidebar;
     display: flex; /* Active Flexbox pour aligner les éléments */
     flex-direction: column; /* Aligne les éléments verticalement */
@@ -235,21 +235,21 @@ aside, aside h2, aside p, aside ul, aside li, aside h4, aside img {
 
 }
 
-aside h2, aside p {
+.aside h2, .aside p {
     width: 100%;
     max-width: 540px;
     text-align: center;
     background-color: transparent;
 }
 
-aside h3{
+.aside h3{
     margin-top: 0.8em;
     margin-left: 0.5rem; 
     max-width: fit-content;
     background-color: transparent;
 }
 
-aside img{
+.aside img{
     width: 100%;
     max-width: 300px;
     height: auto;
@@ -259,20 +259,20 @@ aside img{
 }
 
 
-aside h4 {
+.aside h4 {
     width: 100%;
     max-width: 540px;
     background-color: transparent;
 }
 
-aside ul {
+.aside ul {
     margin: 0.5rem 0; /* Supprime les marges par défaut */
     padding-left: 2rem; /* Décale la liste à droite pour l'aligner avec le texte */
     list-style-type: disc; /* Utilise des puces pour la liste */
 
 }
 
-aside li {
+.aside li {
     margin: 0.5rem 0; /* Ajoute un espacement vertical entre les éléments de la liste */
 }   
 
@@ -301,7 +301,7 @@ aside li {
 
 /* Presentation chef*/
 
-chef {
+.chef {
     grid-area: chef;
     display: flex; /* Active Flexbox pour aligner l'image et le texte horizontalement */
     flex-direction: row; /* Aligne les éléments en ligne (horizontalement) */
@@ -380,7 +380,7 @@ div#slider figure img {
 
 
 /* Partie Envie*/
-envie, envie h2, envie p {
+.envie, .envie h2, .envie p {
     grid-area: envie;
     color: var(--color_text);
     background-color: var(--color_second_variant);
@@ -395,7 +395,7 @@ envie, envie h2, envie p {
     
 }
 
-envie a{
+.envie a{
     text-decoration: none; 
 
 }
@@ -475,7 +475,7 @@ footer {
         margin-right: 0;
     }
 
-    chef {
+    .chef {
         flex-direction: column;
         align-items: center;
         margin-right: 0;
@@ -490,7 +490,7 @@ footer {
         margin-right: 0;
     }
 
-    aside, aside h2, aside p {
+    .aside, .aside h2, .aside p {
         align-items: center;
     }
 }
@@ -569,18 +569,18 @@ footer {
         align-items: center;
     }
 
-    aside, chef, envie {
+    .aside, .chef, .envie {
         padding: 1rem;
     }
 
-    aside{
+    .aside{
         align-items: center;
         margin: 0 auto; /* Centre le bloc sur la page */
         justify-content: center;
         text-align: center; /* Centre le texte */
     }
 
-    aside img{
+    .aside img{
         max-width: 200px; /* Limite la largeur de l'image */
     }
 

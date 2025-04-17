@@ -160,7 +160,7 @@ header a, header img {
 
 
 /*Styles pour les blocs*/
-menu1, menu2, form {
+.menu1, .menu2, .form {
     display: block;
     justify-content: center; /* Centre le contenu horizontalement */
     align-items: center; /* Centre le contenu verticalement */
@@ -173,23 +173,23 @@ menu1, menu2, form {
 
 
 /*Parti du Entree et Plats*/
-menu1 {
+.menu1 {
     grid-area: menu1;
     background-color: var(--color_menu1);
 }
 
 
-menu1 p{
+.menu1 p{
     margin: 8px; /* Ajoute un espacement entre les paragraphes */
 
 }
 
-menu1 h1{
+.menu1 h1{
     margin-bottom: 10px; /* Ajoute un espacement entre les titres et les paragraphes */
     margin-top: 15px; /* Ajoute un espacement entre les titres et les paragraphes */
 }
 
-menu1 hr, menu2 hr{
+.menu1 hr, .menu2 hr{
     margin: 10px 0; /* Ajoute un espacement au-dessus et en dessous de la ligne */
     max-width: 800px;
     border: none; /* Supprime la bordure par défaut */
@@ -200,29 +200,29 @@ menu1 hr, menu2 hr{
 }
 
 /*Parti Dessert et Boissons*/
-menu2 {
+.menu2 {
     grid-area: menu2;
     background-color: var(--color_menu2);
 }
 
-menu2 p{
+.menu2 p{
     margin: 8px; /* Ajoute un espacement entre les paragraphes */
 
 }
 
-menu2 h1{
+.menu2 h1{
     margin-bottom: 10px; /* Ajoute un espacement entre les titres et les paragraphes */
     margin-top: 15px; /* Ajoute un espacement entre les titres et les paragraphes */
 }
 
 
 /*Partis formules*/
-form{
+.form{
     grid-area: form;
     background-color: var(--color_form);
 }
 
-form p{
+.form p{
     margin: 15px; /* Ajoute un espacement entre les paragraphes */
 }
 
@@ -336,7 +336,7 @@ footer {
     }
 
 
-menu1, menu2, form, menu1 p, menu2 p, form p {
+.menu1, .menu2, .form, .menu1 p, .menu2 p, .form p {
     display: block;
     width: 90%;
     height: auto; /* Ajuste la hauteur pour s'adapter au contenu */
