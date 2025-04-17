@@ -198,7 +198,7 @@ main {
 
 }
 
-.txt form input[type="text"], txt form input[type="email"]  {
+.txt form input[type="text"], .txt form input[type="email"]  {
     width: 40%; /* S'assure que les champs de saisie occupent toute la largeur */
     padding: 0.5rem; /* Ajoute un espacement à l'intérieur des champs */
     border-radius: 5px; /* Ajoute des coins arrondis aux champs */
