@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<header>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css\index_style.css">
+    <script type="text/javascript" src="js/darkmode.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Test</title>
+</header>
+
+<body>
+    <div class="grid">
+        <header>
+            <navbar>
+                <div class="burger" id="burger">&#9776;</div> <!-- Icône burger -->
+                <ul class="nav-list" id="nav-list">
+                    <!-- Éléments alignés à gauche -->
+                    <li class="nav-items nav-left">
+                        <a href="index.html"> <img alt="logo_resto" class="logo" src="img/logo.png" /></a>
+                    </li>
+                    <li class="nav-items nav-left">
+                        <h1><a href="index.html">Le Comptoir</a></h1>
+                    </li>
+        
+                    <!-- Éléments alignés à droite -->
+                    <li class="nav-items">
+                        <a href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-items">
+                        <a href="find.html">Nous trouver</a>
+                    </li>
+                    <li class="nav-items">
+                        <button class="btn-resa"><a href="resa.html">Réservation</a></button>
+                    </li>
+                    <li class="nav-items">
+                        <button class="theme_switch" id="theme_switch">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M600-640 480-760l120-120 120 120-120 120Zm200 120-80-80 80-80 80 80-80 80ZM483-80q-84 0-157.5-32t-128-86.5Q143-253 111-326.5T79-484q0-146 93-257.5T409-880q-18 99 11 193.5T520-521q71 71 165.5 100T879-410q-26 144-138 237T483-80Z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+                        </button>
+                    </li>
+                </ul>
+            </navbar>
+        
+            <!-- Image de présentation du resto -->
+            <div class="Image-Resto">
+                <img alt="img-rest" class="img-resto" src="img/resto.jpg" />
+                <div class="resto-text">
+                    <h1>Le Comptoir</h1>
+                    <p>Restaurant traditionnel à Nantes</p>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- Présentation (sur la droite) -->
+            <h2>Qui sommes nous ?</h2>
+            <h3>Le Comptoir – Une cuisine de cœur au centre de Nantes</h3>
+            <p>Au croisement entre tradition et modernité, Le Comptoir est un restaurant niché en plein centre-ville de
+                Nantes, à deux pas de la place Royale, au 12 rue des Mariniers. C’est un lieu pensé comme une parenthèse
+                chaleureuse, où l’on vient se poser, échanger et savourer une cuisine sincère, généreuse et ancrée dans
+                son terroir.</p>
+            <p>Dès les premières secondes, Le Comptoir séduit par son ambiance. Un décor élégant mêlant bois brut,
+                touches industrielles et lumière douce crée un cadre à la fois contemporain et intimiste. L’équipe en
+                salle vous accueille avec le sourire et la simplicité qui font toute la différence : ici, pas de
+                chichis, mais une vraie attention portée au détail et à la satisfaction de chaque client. Le restaurant
+                est à taille humaine, avec une salle principale baignée de lumière et une terrasse en saison, idéale
+                pour profiter des beaux jours au cœur de Nantes.</p>
+            <p>Que vous soyez Nantais de toujours ou simplement de passage, Le Comptoir vous ouvre ses portes avec
+                l’envie simple de vous faire plaisir. Ici, on célèbre la gastronomie sans prétention, dans une ambiance
+                détendue, mais toujours soignée.</p>
+            <p>📍 7 Chau. de la Madeleine, 44000 Nantes</p>
+            <p>📞 02 40 00 00 00</p>
+            <p>🕒 Ouvert du mardi au samedi, de 12h à 14h et de 19h à 22h</p>
+        </main>
+
+        <!-- Section suggestion du jour (à gauche) -->
+        <aside>
+            <h2>Suggestion du jour</h2>
+            <h3>Plat du jour :</h3>
+            <ul>
+                <li>Entrée : Salade César</li>
+                <li>Plat principal : Pavé de cabillaud rôti, sauce vierge</li>
+                <li>Dessert : Panna cotta à la vanille de Madagascar</li>
+            </ul>
+            <img alt="img_poisson" class="img_cabi" src="img/cabilllaut.png" />
+            <p>Formule Entrée + Plat ou Plat + Dessert : 19€</p>
+            <p>Formule complète : 23€</p>
+            <h4>Soda : 3,50€ | Bières pression 5€</h4>
+            <h3>N'hésitez pas à découvrir notre
+                carte entière !</h3>
+            <button class="btn-menu"><a href="menu.html">Menu</a></button>
+        </aside>
+
+        <chef>
+            <!-- Section présentation du chef -->
+            <img alt="img_chef" class="img-chef" src="img/chef.jpg" />
+            <div class="chef-content">
+                <h2>Notre Chef : Jean Dupont</h2>
+                <p>Jean Dupont, chef passionné et créatif, est à la tête de notre cuisine depuis plus de 20 ans.
+                    Originaire de la région, il a su puiser son inspiration dans les produits locaux et les traditions
+                    culinaires françaises. Sa passion pour la gastronomie l’a conduit à travailler dans des
+                    établissements prestigieux avant de revenir à ses racines pour partager son amour de la cuisine avec
+                    vous. Voici les valeurs qui guident son travail au quotidien :</p>
+                <ol>
+                    <li><strong>Authenticité :</strong> Sublimer les produits locaux et respecter leur saveur naturelle.
+                    </li>
+                    <li><strong>Innovation :</strong> Réinventer les recettes traditionnelles avec une touche moderne et
+                        audacieuse.</li>
+                    <li><strong>Engagement :</strong> Collaborer avec des producteurs locaux pour garantir des
+                        ingrédients de qualité et de saison.</li>
+                </ol>
+            </div>
+
+            <!-- Slider photos repas -->
+            <div id="slider">
+                <figure>
+                    <img alt="img_poulet" class="img_bouffe" src="img/poulet_slide.jpg" />
+                    <img alt="img_boeuf" class="img_bouffe" src="img/boeuf_slide.jpg" />
+                    <img alt="img_burger" class="img_bouffe" src="img/burger_slide.jpg" />
+                    <img alt="img_pain" class="img_bouffe" src="img/pain_slide.jpg" />
+                    <img alt="img_poulet" class="img_bouffe" src="img/poulet_slide.jpg" />
+                </figure>
+            </div>
+        </chef>
+
+
+        <envie>
+            <h2> Alors ? Ça vous fait envie ?</h2>
+            <p> Réserver une table dès maintenant !</p>
+            <button class="btn-resa"><a href="resa.html">Réservation</a></button>
+
+        </envie>
+
+        <!-- Footer -->
+        <footer>
+            <div class="foot-left">
+                <h2 style="text-decoration: underline;"> Contact</h2>
+                <p>12 rue des Mariniers, 44000 Nantes</p>
+                <p>02 40 00 00 00</p>
+                <p>contact@Comptoir.fr</p>
+            </div>
+            <div class="foot-right">
+                <!-- Lien vers les réseaux sociaux (ouvre une nouvelle page) -->
+                <ul class="social-media">
+                    <li><a href="https://www.facebook.com/" target="_blank"><img alt="logo_fb" class="logo_social"
+                                src="img/facebook.png" /></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><img alt="logo_insta" class="logo_social"
+                                src="img/instagram.png" /></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <!-- Appel scripts JS pour la NavBar responsive -->
+<script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css\find_style.css">
+    <script type="text/javascript" src="js/darkmode.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="grid">
+        <header>
+            <navbar>
+                <div class="burger" id="burger">&#9776;</div> <!-- Icône burger -->
+                <ul class="nav-list" id="nav-list">
+                    <!-- Éléments alignés à gauche -->
+                    <li class="nav-items nav-left">
+                        <a href="index.html"> <img alt="logo_resto" class="logo" src="img/logo.png" /></a>
+                    </li>
+                    <li class="nav-items nav-left">
+                        <h1><a href="index.html">Le Comptoir</a></h1>
+                    </li>
+
+                    <!-- Éléments alignés à droite -->
+                    <li class="nav-items">
+                        <a href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-items">
+                        <a href="find.html">Nous trouver</a>
+                    </li>
+                    <li class="nav-items">
+                        <button class="btn-resa"><a href="resa.html">Réservation</a></button>
+                    </li>
+                    <li class="nav-items">
+                        <button class="theme_switch" id="theme_switch">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M600-640 480-760l120-120 120 120-120 120Zm200 120-80-80 80-80 80 80-80 80ZM483-80q-84 0-157.5-32t-128-86.5Q143-253 111-326.5T79-484q0-146 93-257.5T409-880q-18 99 11 193.5T520-521q71 71 165.5 100T879-410q-26 144-138 237T483-80Z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+                        </button>
+                    </li>
+                </ul>
+            </navbar>
+        </header>
+
+        <main>
+            <h1>Vous nous chercher ? </h1>
+        </main>
+
+        <txt>
+            <!-- Contact + formulaire question (à gauche) -->
+            <h2>Vous pouvez nous retrouvez au :</h2>
+            <p>7 Chau. de la Madeleine, 44000 Nantes</p>
+            <h2 style="margin-top: 15px;">Une question ?</h2>
+            <p>Vous pouvez nous contacter par téléphone au 02 40 00 00 00</p>
+            <p>Ou vous pouvez remplir ce formulaire !</p>
+
+            <form id="contact-form" autocomplete="on">
+                <label for="name">Nom & Prénom :</label><br>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="email">Email :</label><br>
+                <input type="email" id="email" name="email"><br><br>
+
+                <label for="message">Message :</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+                <input type="submit" value="Envoyer" id="submit">
+            </form>
+
+        </txt>
+
+        <map>
+            <!-- Carte Google Maps (à droite) -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.999123982679!2d-1.5586266849620987!3d47.21837197918468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805c6a8b8e9b5b7%3A0x4c9a6e5c8e5c8e5c!2s7%20Chau.%20de%20la%20Madeleine%2C%2044000%20Nantes!5e0!3m2!1sfr!2sfr!4v1631234567890"
+                width="600" height="450" style="border-radius: 15px; border: 0;">
+            </iframe>
+        </map>
+
+
+
+        <footer>
+            <div class="foot-left">
+                <h2 style="text-decoration: underline;"> Contact</h2>
+                <p>7 Chau. de la Madeleine, 44000 Nantes</p>
+                <p>02 40 00 00 00</p>
+                <p>contact@Comptoir.fr</p>
+            </div>
+            <div class="foot-right">
+                <ul class="social-media">
+                    <li><a href="https://www.facebook.com/" target="_blank"><img alt="logo_fb" class="logo_social"
+                                src="img/facebook.png" /></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><img alt="logo_insta" class="logo_social"
+                                src="img/instagram.png" /></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+        <!-- Appel scripts JS pour la NavBar responsive -->
+        <script src="js/script.js"></script>
+</body>
+
+</html>

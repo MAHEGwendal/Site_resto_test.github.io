@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css\resa_style.css">
+    <script type="text/javascript" src="js/darkmode.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="grid">
+        <header>
+            <!-- NavBar -->
+            <navbar>
+                <div class="burger" id="burger">&#9776;</div> <!-- Icône burger -->
+                <ul class="nav-list" id="nav-list">
+                    <!-- Éléments alignés à gauche -->
+                    <li class="nav-items nav-left">
+                        <a href="index.html"> <img alt="logo_resto" class="logo" src="img/logo.png" /></a>
+                    </li>
+                    <li class="nav-items nav-left">
+                        <h1><a href="index.html">Le Comptoir</a></h1>
+                    </li>
+
+                    <!-- Éléments alignés à droite -->
+                    <li class="nav-items">
+                        <a href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-items">
+                        <a href="find.html">Nous trouver</a>
+                    </li>
+                    <li class="nav-items">
+                        <button class="btn-resa"><a href="resa.html">Réservation</a></button>
+                    </li>
+                    <li class="nav-items">
+                        <button class="theme_switch" id="theme_switch">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M600-640 480-760l120-120 120 120-120 120Zm200 120-80-80 80-80 80 80-80 80ZM483-80q-84 0-157.5-32t-128-86.5Q143-253 111-326.5T79-484q0-146 93-257.5T409-880q-18 99 11 193.5T520-521q71 71 165.5 100T879-410q-26 144-138 237T483-80Z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+                        </button>
+                    </li>
+                </ul>
+            </navbar>
+        </header>
+
+        <main>
+            <!-- Formulaire de réservation-->
+            <h1>Réservation de Table</h1>
+            <form class="reservation-form" id="resa-form"> 
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Téléphone :</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="date">Date :</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Heure (de 18h à 21h) :</label>
+                <input id="time" type="time" name="time" min="18:00" max="21:00" required />
+                <span class="validite"></span>
+
+                <label for="guests">Nombre de personnes :</label>
+                <input type="number" id="guests" name="guests" min="1" required>
+
+                <button type="submit" id="submit">Réserver</button>
+            </form>
+
+        </main>
+
+        <footer>
+            <div class="foot-left">
+                <h2 style="text-decoration: underline;"> Contact</h2>
+                <p>12 rue des Mariniers, 44000 Nantes</p>
+                <p>02 40 00 00 00</p>
+                <p>contact@Comptoir.fr</p>
+            </div>
+            <div class="foot-right">
+                <ul class="social-media">
+                    <li><a href="https://www.facebook.com/" target="_blank"><img alt="logo_fb" class="logo_social"
+                                src="img/facebook.png" /></a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><img alt="logo_insta" class="logo_social"
+                                src="img/instagram.png" /></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <!-- Appel du fichier JS pour pop-up-->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
